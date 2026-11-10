@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MathAI – AI-Supported Assessment Platform</title>
+<meta name="description" content="MathAI: an AI-powered platform for mathematics assessment and personalized feedback.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-quiz" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h5M8 16h3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 5.5L19.5 10.5 14 12.5 12 18l-2-5.5L4.5 10.5 10 8.5z"/><path d="M19 17l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-teacher" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M15 9V6.5A2.5 2.5 0 0 0 12.5 4h-6A2.5 2.5 0 0 0 4 6.5v6A2.5 2.5 0 0 0 6.5 15H9"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l3 3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h10a4 4 0 0 1 4 4v12H9a4 4 0 0 1-4-4z"/><path d="M5 16a4 4 0 0 1 4-4h10"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home"><span class="brand-mark">∑</span><span>Math<span class="ai">AI</span></span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"><svg class="icon"><use href="#i-menu"/></svg>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#feedback">AI Feedback</a>
+      <a href="#prompts">AI Prompts</a>
+      <a href="#review">Human Review</a>
+      <a href="#reflection">Reflection</a>
+      <a href="#thanks">Thank You</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="chip"><svg class="icon" style="width:16px;height:16px"><use href="#i-spark"/></svg>AI-Supported Assessment Platform</span>
+        <h1>MathAI – <em>Learn, Test, Improve.</em></h1>
+        <p class="sub">An AI-powered platform for mathematics assessment and personalized feedback.</p>
+        <p class="intro">Artificial Intelligence can help teachers create quizzes, check what students understand, and write useful feedback. This project shows how. A teacher always checks the AI work before students see it.</p>
+        <div class="cta-row">
+          <a class="btn" href="#quiz">Take the Quiz</a>
+          <a class="btn secondary" href="#feedback">See AI Feedback</a>
+        </div>
+      </div>
+      <aside class="card glance" aria-label="Project at a glance">
+        <h3>Project at a glance</h3>
+        <ul>
+          <li><span class="n">7</span><span class="t">word problems in the digital quiz</span></li>
+          <li><span class="n">5</span><span class="t">student answers with AI feedback</span></li>
+          <li><span class="n">2</span><span class="t">AI prompts used to make the content</span></li>
+          <li><span class="n">1</span><span class="t">human teacher review of every comment</span></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="wrap">
+      <div class="feature-grid">
+        <article class="card feature">
+          <div class="ico"><svg class="icon"><use href="#i-quiz"/></svg></div>
+          <h3>Create quizzes</h3>
+          <p>AI can write many quiz questions in a few minutes. Teachers save time and choose the best ones.</p>
+        </article>
+        <article class="card feature">
+          <div class="ico"><svg class="icon"><use href="#i-chart"/></svg></div>
+          <h3>Check understanding</h3>
+          <p>AI can show common mistakes in student answers. This helps teachers see who needs more help.</p>
+        </article>
+        <article class="card feature">
+          <div class="ico"><svg class="icon"><use href="#i-chat"/></svg></div>
+          <h3>Give useful feedback</h3>
+          <p>AI can explain what was right and what was wrong, in simple and kind words.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section One · AI for Assessment</span>
+        <h2>Mathematics Digital Quiz</h2>
+        <p class="lead">Topic: Basic Mathematics – Word Problems. Choose one answer for each question. Then press Submit Answers.</p>
+      </div>
+
+      <div class="quiz-top">
+        <div class="progress-wrap">
+          <div class="progress-label" id="progLabel">0 of 7 answered</div>
+          <div class="meter" role="progressbar" aria-label="Questions answered" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" id="progBar"><i id="progFill"></i></div>
+        </div>
+      </div>
+
+      <form id="quizForm" novalidate>
+        <div class="q-list" id="qList"></div>
+        <div class="submit-row">
+          <button class="btn" type="submit" id="submitBtn">Submit Answers</button>
+          <button class="btn secondary" type="button" id="retakeBtn" hidden>Retake Quiz</button>
+          <span class="warn" id="warn" role="alert"></span>
+        </div>
+      </form>
+
+      <div class="card result" id="result" hidden aria-live="polite">
+        <div class="score" id="scoreNum"></div>
+        <div>
+          <h3 id="scoreTitle"></h3>
+          <p id="scoreText" class="lead"></p>
+          <div class="meter"><i id="scoreFill"></i></div>
+        </div>
+      </div>
+
+      <details class="card key" id="keyBox">
+        <summary><svg class="icon"><use href="#i-key"/></svg>Teacher section: Answer Key</summary>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Question</th><th>Correct answer</th></tr></thead>
+            <tbody id="keyBody"></tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section Two · AI-Supported Feedback</span>
+        <h2>AI Student Feedback Demonstration</h2>
+        <p class="lead">Here are five student answers to Question 2. Each one has AI feedback and a teacher review.</p>
+      </div>
+
+      <div class="card problem">
+        <span class="chip">Question 2</span>
+        <p>A school has 4 classrooms. Each classroom has 28 students. On Monday, 15 students are absent. How many students are present at school?</p>
+      </div>
+
+      <div class="stu-grid" id="stuGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROMPTS -->
+  <section id="prompts">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section Three</span>
+        <h2>AI Prompts</h2>
+        <p class="lead">These are the two prompts used to make the quiz and the feedback.</p>
+      </div>
+      <div class="prompt-grid">
+        <article class="card prompt">
+          <div class="row"><span class="chip"><svg class="icon" style="width:16px;height:16px"><use href="#i-quiz"/></svg>Prompt 1</span></div>
+          <h3>Quiz Generation</h3>
+          <blockquote id="p1">“Act as a mathematics teacher. Create a digital quiz with 7 multiple-choice word problems for school students. Include four answer options for each question, one correct answer, and a complete answer key. Use clear and age-appropriate language.”</blockquote>
+          <div class="row"><button class="btn secondary" type="button" data-copy="p1"><svg class="icon"><use href="#i-copy"/></svg>Copy prompt</button><span class="copy-note" aria-live="polite"></span></div>
+        </article>
+        <article class="card prompt">
+          <div class="row"><span class="chip"><svg class="icon" style="width:16px;height:16px"><use href="#i-chat"/></svg>Prompt 2</span></div>
+          <h3>Feedback Generation</h3>
+          <blockquote id="p2">“Act as an experienced mathematics teacher. Evaluate five different student answers to the same word problem. Identify mathematical mistakes, explain what each student did correctly or incorrectly, and provide supportive, specific feedback. Do not only give the correct answer; help students understand their mistakes.”</blockquote>
+          <div class="row"><button class="btn secondary" type="button" data-copy="p2"><svg class="icon"><use href="#i-copy"/></svg>Copy prompt</button><span class="copy-note" aria-live="polite"></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEW -->
+  <section id="review">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section Four</span>
+        <h2>Human Review of AI Feedback</h2>
+        <p class="lead">A human teacher checked all the AI-generated feedback before it was used. These are the improvements.</p>
+      </div>
+      <div class="review-grid">
+        <div class="card">
+          <ul class="checks">
+            <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span><span>Checked all mathematical calculations.</span></li>
+            <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span><span>Corrected unclear explanations.</span></li>
+            <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span><span>Made feedback more supportive and constructive.</span></li>
+            <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span><span>Added hints to help students understand their mistakes.</span></li>
+            <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span><span>Ensured that feedback was mathematically accurate.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="font-size:1.15rem;margin-bottom:14px">How the review works</h3>
+          <div class="flow">
+            <div class="step"><span class="dot"><svg class="icon"><use href="#i-spark"/></svg></span><span><strong>AI writes</strong><br><span style="color:var(--muted)">AI makes the first feedback.</span></span></div>
+            <div class="join"></div>
+            <div class="step"><span class="dot"><svg class="icon"><use href="#i-teacher"/></svg></span><span><strong>Teacher checks</strong><br><span style="color:var(--muted)">The teacher fixes mistakes and adds hints.</span></span></div>
+            <div class="join"></div>
+            <div class="step"><span class="dot"><svg class="icon"><use href="#i-check"/></svg></span><span><strong>Students learn</strong><br><span style="color:var(--muted)">Only the reviewed feedback is shared.</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLECTION -->
+  <section id="reflection">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Section Five</span>
+        <h2>My Reflection on Using AI for Assessment</h2>
+      </div>
+      <article class="card reflect">
+        <blockquote id="reflectText">AI helped me create mathematics quiz questions quickly and generate different types of student feedback. It saved time and provided examples of strong, average, and weak student answers. I also learned that AI can help teachers identify common mathematical mistakes. However, AI is not always accurate. Sometimes its feedback can be too general or may not explain a mistake clearly enough. Therefore, I checked every calculation and improved the feedback to make it more useful for students. I believe AI should support teachers, not replace them. Teachers must review AI-generated content before using it in the classroom. Next time, I would create more interactive activities and test the platform with real students.</blockquote>
+        <div class="meta"><span>Reflection</span><span id="wordCount"></span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- THANKS -->
+  <section id="thanks" class="thanks">
+    <div class="wrap">
+      <h2>Thank You for Visiting MathAI!</h2>
+      <p class="sub">Better Assessment. Better Feedback. Better Learning.</p>
+      <p class="msg">Artificial Intelligence can make mathematics assessment more interactive, supportive, and effective.</p>
+      <a class="btn" href="#home">Back to top</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">MathAI – AI-Supported Assessment Platform · An academic project</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
